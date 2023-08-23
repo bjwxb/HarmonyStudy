@@ -1,0 +1,74 @@
+{
+  "float": [
+    {
+      "name": "bar_height",
+      "value": "56vp"
+    },
+    {
+      "name": "title_height",
+      "value": "56vp"
+    },
+    {
+      "name": "title_font_size",
+      "value": "16fp"
+    },
+    {
+      "name": "divider_width",
+      "value": "0.5vp"
+    },
+    {
+      "name": "vp_10",
+      "value": "10vp"
+    },
+    {
+      "name": "vp_12",
+      "value": "12vp"
+    },
+    {
+      "name": "vp_14",
+      "value": "14vp"
+    },
+    {
+      "name": "vp_16",
+      "value": "16vp"
+    },
+    {
+      "name": "vp_18",
+      "value": "18vp"
+    },
+    {
+      "name": "vp_20",
+      "value": "20vp"
+    },
+    {
+      "name": "vp_24",
+      "value": "24vp"
+    },
+    {
+      "name": "fp_12",
+      "value": "12fp"
+    },
+    {
+      "name": "fp_14",
+      "value": "14fp"
+    },
+    {
+      "name": "fp_16",
+      "value": "16fp"
+    },
+    {
+      "name": "fp_18",
+      "value": "18fp"
+    },
+    {
+      "name": "margin_default",
+      "value": "16vp"
+    },
+    {
+      "name": "padding_default",
+      "value": "12vp"
+    }
+
+
+  ]
+}
