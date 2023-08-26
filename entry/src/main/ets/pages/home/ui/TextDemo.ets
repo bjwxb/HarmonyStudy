@@ -74,5 +74,6 @@ struct TextDemo{
     }
     .width(FULL_WIDTH)
     .height(FULL_HEIGHT)
+    .justifyContent(FlexAlign.Start)
   }
 }
