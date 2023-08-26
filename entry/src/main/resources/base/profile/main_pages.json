@@ -1,6 +1,9 @@
 {
   "src": [
     "pages/Index",
-    "pages/main/Main"
+    "pages/main/Main",
+    "pages/home/ui/TextDemo",
+    "pages/home/ui/ButtonDemo",
+    "pages/home/ui/ImageDemo"
   ]
 }

@@ -10,8 +10,23 @@ import logService from '../../common/utils/LogService';
 export default class MainAbility extends UIAbility{
 
   onCreate(){
-    logService.e(">> main onCreate <<")
-  }
+    logService.e(">> main onCreate <<", 'ahah')
+    // let windowClass = null;
+    // let config = {name: "alertWindow", windowType: window.WindowType.TYPE_SYSTEM_ALERT, ctx: this.context};
+    // try {
+    //   window.createWindow(config, (err, data) => {
+    //     if (err.code) {
+    //       console.error('Failed to create the window. Cause: ' + JSON.stringify(err));
+    //       return;
+    //     }
+    //     windowClass = data;
+    //     console.info('Succeeded in creating the window. Data: ' + JSON.stringify(data));
+    //     windowClass.resetSize(500, 1000);
+    //   });
+    // } catch (exception) {
+    //   console.error('Failed to create the window. Cause: ' + JSON.stringify(exception));
+    // }
+;  }
 
   onDestroy(){
     logService.e(">>> main onDestroy <<<")

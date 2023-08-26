@@ -1,5 +1,5 @@
 import router from '@ohos.router';
-import { TitleBarBean } from '../bean/TitleBarBean'
+import { FULL_HEIGHT } from '../constants/CommonConstant';
 
 
 /**
@@ -27,33 +27,51 @@ export struct TitleBar {
 
   build() {
     Row() {
-      if(this.showBack){
-        Image($r("app.media.ic_back"))
-          .height('100%')
-          .objectFit(ImageFit.Contain)
-          .padding({left: 15, right: 5})
-          .onClick(() => {
-            router.back()
-          })
+      Row(){
+        if(this.showBack){
+          Image($r("app.media.ic_left_white"))
+            .objectFit(ImageFit.Contain)
+            .size({width: 25, height: 25})
+        }
       }
+      .width(60)
+      .height(FULL_HEIGHT)
+      .justifyContent(FlexAlign.Center)
+      .onClick(()=>{
+        if(this.showBack){
+          router.back()
+        }
+      })
 
       Text(`${this.title}`)
         .fontSize($r('app.float.fp_18'))
-        .fontColor(Color.Black)
+        .fontColor(Color.White)
         .layoutWeight(1)
         .height("100%")
+        .maxLines(1).textOverflow({overflow: TextOverflow.Ellipsis})
         .textAlign(TextAlign.Center)
 
-      if(this.showRightIcon){
-        Image($r("app.media.ic_right_more"))
-          .height('100%')
-          .objectFit(ImageFit.Contain)
-          .padding({left: 10, right: 10})
-          .onClick(this.rightCallback)
+      Row(){
+        if(this.showRightIcon){
+          Image($r("app.media.ic_right_more"))
+            .height('100%')
+            .objectFit(ImageFit.Contain)
+            .padding({left: 10, right: 10})
+            .onClick(this.rightCallback)
+        }
       }
+      .width(60)
+      .height(FULL_HEIGHT)
+      .justifyContent(FlexAlign.Center)
+      .onClick(()=>{
+        if(this.showRightIcon){
+          router.back()
+        }
+      })
     }
     .width('100%')
     .height($r("app.float.title_height"))
     .backgroundColor(this.bgColor)
+    .justifyContent(FlexAlign.SpaceBetween)
   }
 }

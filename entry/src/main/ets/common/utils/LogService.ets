@@ -5,15 +5,23 @@ import hilog from '@ohos.hilog'
  */
 class LogService{
 
-  d(message:string, tag:string = "melon") {
-    hilog.debug(0x01, tag, message)
+  private domain: number;
+  private tag: string;
+
+  private format: string = '%{public}s, %{public}s';
+
+  constructor(tag: string = 'melonApp', domain: number = 0x01) {
+    this.tag = tag;
+    this.domain = domain;
   }
 
-
-  e(message:string, tag:string = "melon") {
-    hilog.error(0x02, tag, message)
+  d(...args: any[]):void {
+    hilog.debug(this.domain, this.tag, this.format, args)
   }
 
+  e(...args: any[]):void {
+    hilog.debug(this.domain, this.tag, this.format, args)
+  }
 }
 
 let logService = new LogService();

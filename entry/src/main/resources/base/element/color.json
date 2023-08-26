@@ -15,6 +15,14 @@
     {
       "name": "main_bg_color",
       "value": "#f4f5f6"
+    },
+    {
+      "name": "tab_selected_color",
+      "value": "#ff0000"
+    },
+    {
+      "name": "tab_normal_color",
+      "value": "#333333"
     }
   ]
 }
