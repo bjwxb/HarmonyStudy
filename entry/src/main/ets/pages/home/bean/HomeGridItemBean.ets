@@ -12,6 +12,7 @@ export enum GridItemId{
   TEXT,
   BUTTON,
   IMAGE,
+  TEXT_INPUT,
   DEFAULT,
 }
 
@@ -32,7 +33,7 @@ export const HomeGridList:HomeGridItemBean[] = [
     text:"Image"
   },
   {
-    id:GridItemId.DEFAULT,
+    id:GridItemId.TEXT_INPUT,
     icon:$r('app.media.app_icon'),
     text:"输入框"
   },

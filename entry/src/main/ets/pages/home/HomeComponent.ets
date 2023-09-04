@@ -71,6 +71,9 @@ export struct HomeComponent{
       case GridItemId.IMAGE:
         router.pushUrl({url: AppPage.pageImageDemo})
         break
+      case GridItemId.TEXT_INPUT:
+        router.pushUrl({url: AppPage.pageTextInputDemo})
+        break
       default:
         toast.show(`${item.text}`)
     }

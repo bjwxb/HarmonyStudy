@@ -4,6 +4,7 @@
     "pages/main/Main",
     "pages/home/ui/TextDemo",
     "pages/home/ui/ButtonDemo",
-    "pages/home/ui/ImageDemo"
+    "pages/home/ui/ImageDemo",
+    "pages/home/ui/TextInputDemo"
   ]
 }
