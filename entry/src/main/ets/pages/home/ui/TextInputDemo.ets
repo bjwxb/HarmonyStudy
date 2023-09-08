@@ -44,8 +44,12 @@ struct TextInputDemo {
           .layoutWeight(1)
           .height(50)
           .maxLength(16)
+          .borderWidth(2)
+          .borderColor(Color.Orange)
+          .borderStyle(BorderStyle.Solid)
+          .borderRadius(8)
           .type(InputType.Password) //键盘类型
-          .showPasswordIcon(false) //是否显示眼睛icon
+          .showPasswordIcon(true) //是否显示眼睛icon
           .placeholderFont({
             size: 14,
             weight: FontWeight.Normal,
@@ -57,28 +61,25 @@ struct TextInputDemo {
       .padding({ left: 20, right: 20 })
       .margin({ top: 10, bottom: 30})
 
-
-
-     Column(){
-       TextArea({placeholder: "请输入多行内容"})
-         .width(FULL_WIDTH)
-         .backgroundColor(Color.Gray)
-         .placeholderColor(Color.Red)
-         .placeholderFont({
-           size: 14,
-           weight: FontWeight.Normal,
-           style: FontStyle.Italic
-         })
-         .borderRadius(0)
-         .fontColor(Color.Blue)
-         .fontSize(14)
-         .fontStyle(FontStyle.Normal)
-         .fontWeight(FontWeight.Bold)
-     }
-     .padding({left: 20, right: 20})
-     .justifyContent(FlexAlign.Start)
-     .backgroundColor(Color.Brown)
-
-    }
+        Column(){
+          TextArea({placeholder: "请输入多行内容"})
+            .width('80%')
+            .height(140)
+            .placeholderColor(Color.Red)
+            .placeholderFont({
+              size: 14,
+              weight: FontWeight.Normal,
+              style: FontStyle.Italic
+            })
+            .borderRadius(0)
+            .fontColor(Color.Blue)
+            .fontSize(14)
+            .fontStyle(FontStyle.Normal)
+            .fontWeight(FontWeight.Bold)
+        }
+        .alignItems(HorizontalAlign.Center)
+        .backgroundColor($r('app.color.main_bg_color'))
+        .width("100%")
+      }
   }
 }

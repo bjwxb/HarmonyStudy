@@ -7,4 +7,5 @@ export class AppPage{
   static readonly pageButtonDemo: string = 'pages/home/ui/ButtonDemo';
   static readonly pageImageDemo: string = 'pages/home/ui/ImageDemo';
   static readonly pageTextInputDemo: string = 'pages/home/ui/TextInputDemo';
+  static readonly pageProgressDemo: string = 'pages/home/ui/ProgressDemo';
 }

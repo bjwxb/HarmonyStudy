@@ -5,6 +5,7 @@
     "pages/home/ui/TextDemo",
     "pages/home/ui/ButtonDemo",
     "pages/home/ui/ImageDemo",
-    "pages/home/ui/TextInputDemo"
+    "pages/home/ui/TextInputDemo",
+    "pages/home/ui/ProgressDemo"
   ]
 }

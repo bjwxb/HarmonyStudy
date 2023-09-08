@@ -13,6 +13,7 @@ export enum GridItemId{
   BUTTON,
   IMAGE,
   TEXT_INPUT,
+  PROGRESS,
   DEFAULT,
 }
 
@@ -38,7 +39,7 @@ export const HomeGridList:HomeGridItemBean[] = [
     text:"输入框"
   },
   {
-    id:GridItemId.DEFAULT,
+    id:GridItemId.PROGRESS,
     icon:$r('app.media.app_icon'),
     text:"进度条"
   },

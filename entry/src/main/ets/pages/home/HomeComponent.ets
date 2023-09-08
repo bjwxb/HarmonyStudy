@@ -74,6 +74,9 @@ export struct HomeComponent{
       case GridItemId.TEXT_INPUT:
         router.pushUrl({url: AppPage.pageTextInputDemo})
         break
+      case GridItemId.PROGRESS:
+        router.pushUrl({url: AppPage.pageProgressDemo})
+        break
       default:
         toast.show(`${item.text}`)
     }
