@@ -6,6 +6,9 @@
     "pages/home/ui/ButtonDemo",
     "pages/home/ui/ImageDemo",
     "pages/home/ui/TextInputDemo",
-    "pages/home/ui/ProgressDemo"
+    "pages/home/ui/ProgressDemo",
+    "pages/home/ui/ToggleDemo",
+    "pages/home/ui/QRCodeDemo",
+    "pages/home/ui/PickerDemo"
   ]
 }

@@ -28,6 +28,13 @@ struct TextDemo{
         .border({width: 1, color: Color.Red, radius: 8})
         .margin({top: 10})
 
+      Text('')
+        .width(20)
+        .height(20)
+        .borderRadius(20)
+        .margin({top: 10})
+        .backgroundColor(Color.Red)
+
       Text('圆')
         .backgroundColor(Color.Red)
         .width(40)

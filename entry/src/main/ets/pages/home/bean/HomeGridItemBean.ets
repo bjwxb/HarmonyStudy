@@ -14,6 +14,9 @@ export enum GridItemId{
   IMAGE,
   TEXT_INPUT,
   PROGRESS,
+  PICKER,
+  QRCODE,
+  TOGGLE,
   DEFAULT,
 }
 
@@ -44,17 +47,17 @@ export const HomeGridList:HomeGridItemBean[] = [
     text:"进度条"
   },
   {
-    id:GridItemId.DEFAULT,
+    id:GridItemId.PICKER,
     icon:$r('app.media.app_icon'),
     text:"选择器"
   },
   {
-    id:GridItemId.DEFAULT,
+    id:GridItemId.QRCODE,
     icon:$r('app.media.app_icon'),
     text:"二维码"
   },
   {
-    id:GridItemId.DEFAULT,
+    id:GridItemId.TOGGLE,
     icon:$r('app.media.app_icon'),
     text:"开关"
   },

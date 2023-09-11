@@ -77,6 +77,15 @@ export struct HomeComponent{
       case GridItemId.PROGRESS:
         router.pushUrl({url: AppPage.pageProgressDemo})
         break
+      case GridItemId.PICKER:
+        router.pushUrl({url: AppPage.pagePickerDemo})
+        break
+      case GridItemId.QRCODE:
+        router.pushUrl({url: AppPage.pageQrCodeDemo})
+        break
+      case GridItemId.TOGGLE:
+        router.pushUrl({url: AppPage.pageToggleDemo})
+        break
       default:
         toast.show(`${item.text}`)
     }
