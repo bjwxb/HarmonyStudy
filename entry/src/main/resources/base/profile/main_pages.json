@@ -9,6 +9,8 @@
     "pages/home/ui/ProgressDemo",
     "pages/home/ui/ToggleDemo",
     "pages/home/ui/QRCodeDemo",
-    "pages/home/ui/PickerDemo"
+    "pages/home/ui/PickerDemo",
+    "pages/home/ui/SlideDemo",
+    "pages/home/ui/RatingDemo"
   ]
 }

@@ -17,6 +17,8 @@ export enum GridItemId{
   PICKER,
   QRCODE,
   TOGGLE,
+  SLIDE,
+  RATING,
   DEFAULT,
 }
 
@@ -67,12 +69,12 @@ export const HomeGridList:HomeGridItemBean[] = [
     text:"提示框"
   },
   {
-    id:GridItemId.DEFAULT,
+    id:GridItemId.SLIDE,
     icon:$r('app.media.app_icon'),
     text:"滑动条"
   },
   {
-    id:GridItemId.DEFAULT,
+    id:GridItemId.RATING,
     icon:$r('app.media.app_icon'),
     text:"评分条"
   },

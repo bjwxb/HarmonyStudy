@@ -86,6 +86,12 @@ export struct HomeComponent{
       case GridItemId.TOGGLE:
         router.pushUrl({url: AppPage.pageToggleDemo})
         break
+      case GridItemId.SLIDE:
+        router.pushUrl({url: AppPage.pageSlideDemo})
+        break
+      case GridItemId.RATING:
+        router.pushUrl({url: AppPage.pageRatingDemo})
+        break
       default:
         toast.show(`${item.text}`)
     }

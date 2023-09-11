@@ -16,6 +16,8 @@ struct PickerDemo {
             .width("60%")
             .margin({bottom: 30})
 
+          Circle().width(20).height(20).fill(Color.Brown)
+
           TimePicker()
             .width("60%")
             .useMilitaryTime(true) //true -置12小时制，也就是不显示上下午文本
@@ -49,6 +51,7 @@ struct PickerDemo {
               logService.e(`date >>> year = ${d.year}, month = ${d.month}, day = ${d.day}`)
             })
         }
+
       }
       .width(FULL_WIDTH)
       .scrollBar(BarState.Off)

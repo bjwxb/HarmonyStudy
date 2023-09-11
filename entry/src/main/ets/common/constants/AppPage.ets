@@ -11,4 +11,6 @@ export class AppPage{
   static readonly pagePickerDemo: string = "pages/home/ui/PickerDemo";
   static readonly pageQrCodeDemo: string = "pages/home/ui/QRCodeDemo";
   static readonly pageToggleDemo: string = "pages/home/ui/ToggleDemo";
+  static readonly pageSlideDemo: string = "pages/home/ui/SlideDemo";
+  static readonly pageRatingDemo: string = "pages/home/ui/RatingDemo";
 }
