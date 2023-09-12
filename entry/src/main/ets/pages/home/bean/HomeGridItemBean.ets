@@ -19,6 +19,7 @@ export enum GridItemId{
   TOGGLE,
   SLIDE,
   RATING,
+  SIDE_BAR,
   DEFAULT,
 }
 
@@ -79,22 +80,7 @@ export const HomeGridList:HomeGridItemBean[] = [
     text:"评分条"
   },
   {
-    id:GridItemId.DEFAULT,
-    icon:$r('app.media.app_icon'),
-    text:"Row/Column"
-  },
-  {
-    id:GridItemId.DEFAULT,
-    icon:$r('app.media.app_icon'),
-    text:"Flex/Stack"
-  },
-  {
-    id:GridItemId.DEFAULT,
-    icon:$r('app.media.app_icon'),
-    text:"GridContainer"
-  },
-  {
-    id:GridItemId.DEFAULT,
+    id:GridItemId.SIDE_BAR,
     icon:$r('app.media.app_icon'),
     text:"侧边栏"
   },

@@ -11,6 +11,7 @@
     "pages/home/ui/QRCodeDemo",
     "pages/home/ui/PickerDemo",
     "pages/home/ui/SlideDemo",
-    "pages/home/ui/RatingDemo"
+    "pages/home/ui/RatingDemo",
+    "pages/home/ui/SideBarDemo"
   ]
 }

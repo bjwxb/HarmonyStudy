@@ -92,6 +92,9 @@ export struct HomeComponent{
       case GridItemId.RATING:
         router.pushUrl({url: AppPage.pageRatingDemo})
         break
+      case GridItemId.SIDE_BAR:
+        router.pushUrl({url: AppPage.pageSideBarDemo})
+        break
       default:
         toast.show(`${item.text}`)
     }
