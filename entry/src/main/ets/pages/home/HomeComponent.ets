@@ -101,6 +101,9 @@ export struct HomeComponent{
       case GridItemId.RELATIVE:
         router.pushUrl({url: AppPage.pageRelativeDemo})
         break
+      case GridItemId.Scroll:
+        router.pushUrl({url: AppPage.pageScrollDemo})
+        break
       default:
         toast.show(`${item.text}`)
     }

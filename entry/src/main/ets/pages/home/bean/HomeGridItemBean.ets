@@ -22,6 +22,7 @@ export enum GridItemId{
   SIDE_BAR,
   BADGE,
   RELATIVE,
+  Scroll,
   DEFAULT,
 }
 
@@ -97,7 +98,7 @@ export const HomeGridList:HomeGridItemBean[] = [
     text:"相对布局"
   },
   {
-    id:GridItemId.DEFAULT,
+    id:GridItemId.Scroll,
     icon:$r('app.media.app_icon'),
     text:"Scroll/Scroller"
   },
