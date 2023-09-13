@@ -14,9 +14,9 @@ struct RelativeDemo {
       RelativeContainer(){
         Text('text 1')
           .fontColor(Color.Blue)
-            .alignRules({
-              top: {anchor: "__container__", align: VerticalAlign.Top},
-            })
+          .alignRules({
+            top: {anchor: "__container__", align: VerticalAlign.Top},
+          })
           .backgroundColor(Color.Grey)
           .height(80)
           .width(80)
@@ -76,6 +76,36 @@ struct RelativeDemo {
       .height(300)
       .margin({top: 30})
       .backgroundColor(Color.Pink)
+
+      RelativeContainer(){
+        Text("Hello World!")
+          .fontColor(Color.Red)
+          .alignRules({
+            left:{anchor: "__container__", align: HorizontalAlign.Start},
+            right:{anchor: "__container__", align: HorizontalAlign.Center},
+            top:{anchor: "__container__", align: VerticalAlign.Top},
+            bottom:{anchor: "__container__", align: VerticalAlign.Center}
+          })
+          .id("hah")
+          .textAlign(TextAlign.Center)
+          .backgroundColor(Color.Green)
+
+        Text("Hello World! heh")
+          .fontColor(Color.Red)
+          .alignRules({
+            left:{anchor: "__container__", align: HorizontalAlign.Center},
+            right:{anchor: "__container__", align: HorizontalAlign.End},
+            top:{anchor: "__container__", align: VerticalAlign.Center},
+            bottom:{anchor: "__container__", align: VerticalAlign.Bottom}
+          })
+          .id("hehe")
+          .textAlign(TextAlign.Center)
+          .backgroundColor(Color.Yellow)
+      }
+      .width("90%")
+      .height(200)
+      .margin(20)
+      .backgroundColor(Color.Blue)
     }
     .width('100%')
     .height(FULL_HEIGHT)
