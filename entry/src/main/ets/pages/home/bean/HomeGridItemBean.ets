@@ -20,6 +20,8 @@ export enum GridItemId{
   SLIDE,
   RATING,
   SIDE_BAR,
+  BADGE,
+  RELATIVE,
   DEFAULT,
 }
 
@@ -85,12 +87,12 @@ export const HomeGridList:HomeGridItemBean[] = [
     text:"侧边栏"
   },
   {
-    id:GridItemId.DEFAULT,
+    id:GridItemId.BADGE,
     icon:$r('app.media.app_icon'),
     text:"角标"
   },
   {
-    id:GridItemId.DEFAULT,
+    id:GridItemId.RELATIVE,
     icon:$r('app.media.app_icon'),
     text:"相对布局"
   },

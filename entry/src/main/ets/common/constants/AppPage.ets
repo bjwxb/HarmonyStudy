@@ -14,4 +14,6 @@ export class AppPage{
   static readonly pageSlideDemo: string = "pages/home/ui/SlideDemo";
   static readonly pageRatingDemo: string = "pages/home/ui/RatingDemo";
   static readonly pageSideBarDemo: string = "pages/home/ui/SideBarDemo";
+  static readonly pageBadgeDemo: string = "pages/home/ui/BadgeDemo";
+  static readonly pageRelativeDemo: string = "pages/home/ui/RelativeDemo";
 }

@@ -12,6 +12,8 @@
     "pages/home/ui/PickerDemo",
     "pages/home/ui/SlideDemo",
     "pages/home/ui/RatingDemo",
-    "pages/home/ui/SideBarDemo"
+    "pages/home/ui/SideBarDemo",
+    "pages/home/ui/BadgeDemo",
+    "pages/home/ui/RelativeDemo"
   ]
 }
