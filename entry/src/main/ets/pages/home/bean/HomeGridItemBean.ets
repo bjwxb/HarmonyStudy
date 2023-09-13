@@ -23,6 +23,9 @@ export enum GridItemId{
   BADGE,
   RELATIVE,
   Scroll,
+  List,
+  Grid,
+  Swiper,
   DEFAULT,
 }
 
@@ -103,17 +106,17 @@ export const HomeGridList:HomeGridItemBean[] = [
     text:"Scroll/Scroller"
   },
   {
-    id:GridItemId.DEFAULT,
+    id:GridItemId.List,
     icon:$r('app.media.app_icon'),
     text:"List"
   },
   {
-    id:GridItemId.DEFAULT,
+    id:GridItemId.Grid,
     icon:$r('app.media.app_icon'),
     text:"Grid"
   },
   {
-    id:GridItemId.DEFAULT,
+    id:GridItemId.Swiper,
     icon:$r('app.media.app_icon'),
     text:"Swiper"
   },
