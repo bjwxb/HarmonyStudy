@@ -29,6 +29,7 @@ export enum GridItemId{
   WebView,
   Video,
   Refresh,
+  PatternLock,
   DEFAULT,
 }
 
@@ -139,7 +140,7 @@ export const HomeGridList:HomeGridItemBean[] = [
     text:"WebView"
   },
   {
-    id:GridItemId.DEFAULT,
+    id:GridItemId.PatternLock,
     icon:$r('app.media.app_icon'),
     text:"手势密码"
   },

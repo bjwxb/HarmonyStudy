@@ -23,4 +23,5 @@ export class AppPage{
   static readonly pageWebViewDemo: string = "pages/home/ui/WebViewDemo";
   static readonly pageVideoDemo: string = "pages/home/ui/VideoDemo";
   static readonly pageRefreshDemo: string = "pages/home/ui/RefreshDemo";
+  static readonly pageLockDemo: string = "pages/home/ui/PatternLockDemo";
 }

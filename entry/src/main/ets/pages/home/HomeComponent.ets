@@ -122,6 +122,9 @@ export struct HomeComponent{
       case GridItemId.Refresh:
         router.pushUrl({url: AppPage.pageRefreshDemo})
         break
+      case GridItemId.PatternLock:
+        router.pushUrl({url: AppPage.pageLockDemo})
+        break
       default:
         toast.show(`${item.text}`)
     }

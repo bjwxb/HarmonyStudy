@@ -1,9 +1,10 @@
+import logService from '../../../common/utils/LogService'
 import { TitleBar } from '../../../common/widgets/TitleBar'
 
 @Entry
 @Component
 struct PatternLockDemo {
-  @State passwords: Number[] = []
+  @State passwords: Number[] = [0,1,2,5,8]
   @State message: string = '请验证密码'
   private patternLockController: PatternLockController = new PatternLockController()
 
@@ -32,6 +33,7 @@ struct PatternLockDemo {
             this.message = "密码长度至少为5位数。";
             return;
           }
+          logService.e(">>> " + input.toString())
           if (this.passwords.length > 0) {
             if (this.passwords.toString() == input.toString()) {
               this.passwords = input
