@@ -18,6 +18,9 @@
     "pages/home/ui/ScrollDemo",
     "pages/home/ui/ListDemo",
     "pages/home/ui/GridDemo",
-    "pages/home/ui/SwiperDemo"
+    "pages/home/ui/SwiperDemo",
+    "pages/home/ui/WebViewDemo",
+    "pages/home/ui/VideoDemo",
+    "pages/home/ui/RefreshDemo"
   ]
 }

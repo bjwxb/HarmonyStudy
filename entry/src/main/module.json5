@@ -11,6 +11,12 @@
     "deliveryWithInstall": true,
     "installationFree": false,
     "pages": "$profile:main_pages",
+    "requestPermissions": [
+      {
+        "name": "ohos.permission.INTERNET",
+        "usedScene": {"abilities": ["MainAbility"], "when": "always"},
+      }
+    ],
     "abilities": [
       {
         "name": "MainAbility",

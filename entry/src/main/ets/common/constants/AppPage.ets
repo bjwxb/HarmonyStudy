@@ -20,4 +20,7 @@ export class AppPage{
   static readonly pageListDemo: string = "pages/home/ui/ListDemo";
   static readonly pageGridDemo: string = "pages/home/ui/GridDemo";
   static readonly pageSwiperDemo: string = "pages/home/ui/SwiperDemo";
+  static readonly pageWebViewDemo: string = "pages/home/ui/WebViewDemo";
+  static readonly pageVideoDemo: string = "pages/home/ui/VideoDemo";
+  static readonly pageRefreshDemo: string = "pages/home/ui/RefreshDemo";
 }

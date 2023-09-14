@@ -113,6 +113,15 @@ export struct HomeComponent{
       case GridItemId.Swiper:
         router.pushUrl({url: AppPage.pageSwiperDemo})
         break
+      case GridItemId.WebView:
+        router.pushUrl({url: AppPage.pageWebViewDemo})
+        break
+      case GridItemId.Video:
+        router.pushUrl({url: AppPage.pageVideoDemo})
+        break
+      case GridItemId.Refresh:
+        router.pushUrl({url: AppPage.pageRefreshDemo})
+        break
       default:
         toast.show(`${item.text}`)
     }

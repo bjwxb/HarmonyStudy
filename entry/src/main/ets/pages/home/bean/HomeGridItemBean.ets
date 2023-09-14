@@ -26,6 +26,9 @@ export enum GridItemId{
   List,
   Grid,
   Swiper,
+  WebView,
+  Video,
+  Refresh,
   DEFAULT,
 }
 
@@ -121,17 +124,17 @@ export const HomeGridList:HomeGridItemBean[] = [
     text:"Swiper"
   },
   {
-    id:GridItemId.DEFAULT,
+    id:GridItemId.Refresh,
     icon:$r('app.media.app_icon'),
     text:"Refresh"
   },
   {
-    id:GridItemId.DEFAULT,
+    id:GridItemId.Video,
     icon:$r('app.media.app_icon'),
     text:"视频播放"
   },
   {
-    id:GridItemId.DEFAULT,
+    id:GridItemId.WebView,
     icon:$r('app.media.app_icon'),
     text:"WebView"
   },
