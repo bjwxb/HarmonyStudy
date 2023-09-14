@@ -21,6 +21,7 @@
     "pages/home/ui/SwiperDemo",
     "pages/home/ui/WebViewDemo",
     "pages/home/ui/VideoDemo",
-    "pages/home/ui/RefreshDemo"
+    "pages/home/ui/RefreshDemo",
+    "pages/home/ui/PatternLockDemo"
   ]
 }
