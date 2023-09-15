@@ -3,6 +3,7 @@
  * Auth: wuxiaobo
  */
 import router from '@ohos.router';
+import App from '@system.app';
 import { AppPage } from '../../common/constants/AppPage';
 import { FULL_WIDTH } from '../../common/constants/CommonConstant';
 import toast from '../../common/utils/Toast';
@@ -124,6 +125,12 @@ export struct HomeComponent{
         break
       case GridItemId.PatternLock:
         router.pushUrl({url: AppPage.pageLockDemo})
+        break
+      case GridItemId.Navigation:
+        router.pushUrl({url: AppPage.pageNavigationDemo})
+        break
+      case GridItemId.AlphabetIndexer:
+        router.pushUrl({url: AppPage.pageAlphabetIndexerDemo})
         break
       default:
         toast.show(`${item.text}`)

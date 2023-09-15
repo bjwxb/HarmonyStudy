@@ -4,14 +4,17 @@
  * Auth: wuxiaobo
  */
 import { FULL_HEIGHT, FULL_WIDTH } from '../../../common/constants/CommonConstant'
+import logService from '../../../common/utils/LogService'
 import { TitleBar } from '../../../common/widgets/TitleBar'
 
 @Entry
 @Component
-struct TextDemo{
-  build(){
-    Column(){
-      TitleBar({ title: 'Text demo'})
+struct TextDemo {
+  @State startMarquee: boolean = false
+
+  build() {
+    Column() {
+      TitleBar({ title: 'Text demo' })
 
       Text('普通默认文字').lineHeight(30)
       Text('加粗文字').fontWeight(FontWeight.Bold).lineHeight(30)
@@ -20,13 +23,43 @@ struct TextDemo{
         .fontColor(Color.White)
         .backgroundColor(Color.Blue)
         .textAlign(TextAlign.Center)
-        .margin({top: 10})
+        .margin({ top: 10 })
+
+      //todo 为什么不生效
+      Marquee({
+        start: this.startMarquee,
+        step: 50,
+        fromStart: true,
+        loop: Infinity,
+        src: "Hello World!"
+      }).width("60%")
+        .height(30)
+        .backgroundColor(Color.Pink)
+        .margin({ top: 10 })
+        .onStart(() => {
+          logService.d('Marquee animation complete onStart')
+        })
+        .onBounce(() => {
+          logService.d('Marquee animation complete onBounce')
+        })
+        .onFinish(() => {
+          logService.d('Marquee animation complete onFinish')
+        })
+
+      Button('Marquee Start')
+        .onClick(() => {
+          this.startMarquee = true; //!this.startMarquee
+        })
+        .height(40)
+        .fontSize(16)
+        .margin({ top: 10 })
+        .backgroundColor('#007DFF')
 
       Text('文字圆角背景')
         .height(40)
-        .padding({left: 10, right: 10})
-        .border({width: 1, color: Color.Red, radius: 8})
-        .margin({top: 10})
+        .padding({ left: 10, right: 10 })
+        .border({ width: 1, color: Color.Red, radius: 8 })
+        .margin({ top: 10 })
 
       Text('')
         .width(20)

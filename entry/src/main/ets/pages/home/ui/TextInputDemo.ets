@@ -2,12 +2,20 @@
  * Created on 2023/9/4
  * Auth: wuxiaobo
  */
-import { FULL_WIDTH } from '../../../common/constants/CommonConstant'
+import { FULL_HEIGHT, FULL_WIDTH } from '../../../common/constants/CommonConstant'
 import logService from '../../../common/utils/LogService'
 import { TitleBar } from '../../../common/widgets/TitleBar'
+
 @Entry
 @Component
 struct TextInputDemo {
+  @State accumulateTime: number = 0
+  // 导入对象
+  controller: TextClockController = new TextClockController()
+
+  private select: number = 1
+  private fruits: string[] = ['apple1', 'orange2', 'peach3', 'grape4']
+
   build() {
     Column() {
       TitleBar({ title: "TextInput Demo" })
@@ -61,25 +69,58 @@ struct TextInputDemo {
       .padding({ left: 20, right: 20 })
       .margin({ top: 10, bottom: 30})
 
-        Column(){
-          TextArea({placeholder: "请输入多行内容"})
-            .width('80%')
-            .height(140)
-            .placeholderColor(Color.Red)
-            .placeholderFont({
-              size: 14,
-              weight: FontWeight.Normal,
-              style: FontStyle.Italic
-            })
-            .borderRadius(0)
-            .fontColor(Color.Blue)
-            .fontSize(14)
-            .fontStyle(FontStyle.Normal)
-            .fontWeight(FontWeight.Bold)
-        }
-        .alignItems(HorizontalAlign.Center)
-        .backgroundColor($r('app.color.main_bg_color'))
-        .width("100%")
+      TextArea({placeholder: "请输入多行内容"})
+        .height(100)
+        .placeholderColor(Color.Red)
+        .placeholderFont({
+          size: 14,
+          weight: FontWeight.Normal,
+          style: FontStyle.Italic
+        })
+        .borderRadius(0)
+        .fontColor(Color.Blue)
+        .fontSize(14)
+        .fontStyle(FontStyle.Normal)
+        .fontWeight(FontWeight.Bold)
+        .margin({left: 20, right: 20})
+
+      TextPicker({ range: this.fruits, selected: this.select })
+        .onChange((value: string, index: number) => {
+          console.info('Picker item changed, value: ' + value + ', index: ' + index)
+        })
+
+      Flex({ direction: FlexDirection.Column, alignItems: ItemAlign.Center, justifyContent: FlexAlign.Center }) {
+        Text('Current milliseconds is ' + this.accumulateTime)
+          .fontSize(20)
+
+        TextClock({ timeZoneOffset: -8, controller: this.controller })
+          //HH-24小时进制， hh-12小时
+          //yyyyMMdd - 2023/09/13
+          //yyyyMMMMd - 2023年9月13日
+          .format('yyyyMMddHms')
+          .fontSize($r('app.float.fp_24'))
+          .fontColor(Color.Red)
+          .onDateChange((value: number) => {
+            this.accumulateTime = value
+          })
+          .margin(20)
+
+        Button("start TextClock")
+          .margin({ bottom: 10 })
+          .onClick(() => {
+            // 启动文本时钟
+            this.controller.start()
+          })
+        Button("stop TextClock")
+          .onClick(() => {
+            // 停止文本时钟
+            this.controller.stop()
+          })
       }
+      .width('100%')
+      .layoutWeight(1)
+    }
+    .width(FULL_WIDTH)
+    .height(FULL_HEIGHT)
   }
 }

@@ -2,7 +2,6 @@ import UIAbility from '@ohos.app.ability.UIAbility';
 import window from '@ohos.window';
 import logService from '../../common/utils/LogService';
 
-
 /**
  * Created on 2023/8/22
  * Auth: wuxiaobo
@@ -19,7 +18,7 @@ export default class MainAbility extends UIAbility{
 
   onWindowStageCreate(windowStage: window.WindowStage){
     logService.e(">>> onWindowStageCreate <<<")
-    windowStage.loadContent('pages/main/Main', (err, data) => {
+    windowStage.loadContent('pages/boot/SplashPage', (err, data) => {
       if (err.code) {
         logService.e(JSON.stringify(err) ?? '')
         return;

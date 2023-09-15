@@ -3,6 +3,8 @@
  * Auth: wuxiaobo
  */
 export class AppPage{
+  static readonly pageMain: string = 'pages/main/Main';
+  static readonly pageAdvertising: string = 'pages/boot/AdvertisingPage';
   static readonly pageTextDemo: string = 'pages/home/ui/TextDemo';
   static readonly pageButtonDemo: string = 'pages/home/ui/ButtonDemo';
   static readonly pageImageDemo: string = 'pages/home/ui/ImageDemo';
@@ -24,4 +26,6 @@ export class AppPage{
   static readonly pageVideoDemo: string = "pages/home/ui/VideoDemo";
   static readonly pageRefreshDemo: string = "pages/home/ui/RefreshDemo";
   static readonly pageLockDemo: string = "pages/home/ui/PatternLockDemo";
+  static readonly pageNavigationDemo: string = "pages/home/ui/NavigationDemo";
+  static readonly pageAlphabetIndexerDemo: string = "pages/home/ui/AlphabetIndexerDemo";
 }

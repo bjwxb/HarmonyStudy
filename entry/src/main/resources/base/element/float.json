@@ -77,6 +77,14 @@
       "value": "18fp"
     },
     {
+      "name": "fp_20",
+      "value": "20fp"
+    },
+    {
+      "name": "fp_24",
+      "value": "24fp"
+    },
+    {
       "name": "margin_default",
       "value": "16vp"
     },

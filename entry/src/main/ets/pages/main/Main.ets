@@ -1,7 +1,7 @@
 import { NevList, TabId } from './bean/NevItemBean';
-import { HomeComponent } from '../home/HomeComponent';
 import { MallComponent } from '../mall/MallComponent';
 import { MineComponent } from './widgets/MineComponent';
+import { HomeComponent2 } from '../home/HomeComponent2';
 
 
 /**
@@ -14,6 +14,7 @@ struct Main{
 
   private controller: TabsController = new TabsController();
   @State currentIndex:number = 0
+  @Provide isFirst:boolean = false
 
   build(){
     Tabs({
@@ -21,7 +22,7 @@ struct Main{
       controller: this.controller
     }) {
       TabContent() {
-        HomeComponent()
+        HomeComponent2()
       }
       .tabBar(this.TabItem(TabId.HOME))
 

@@ -30,6 +30,8 @@ export enum GridItemId{
   Video,
   Refresh,
   PatternLock,
+  Navigation,
+  AlphabetIndexer,
   DEFAULT,
 }
 
@@ -143,6 +145,21 @@ export const HomeGridList:HomeGridItemBean[] = [
     id:GridItemId.PatternLock,
     icon:$r('app.media.app_icon'),
     text:"手势密码"
+  },
+  {
+    id:GridItemId.Navigation,
+    icon:$r('app.media.app_icon'),
+    text:"Navigation"
+  },
+  {
+    id:GridItemId.AlphabetIndexer,
+    icon:$r('app.media.app_icon'),
+    text:"字母索引"
+  },
+  {
+    id:GridItemId.DEFAULT,
+    icon:$r('app.media.app_icon'),
+    text:"步骤页面"
   },
   {
     id:GridItemId.DEFAULT,
